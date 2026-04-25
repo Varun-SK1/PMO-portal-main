@@ -73,7 +73,8 @@ export default function AppLayout() {
     root.setProperty('--jlr-input-bg', t.inputBg);
   };
 
-  useEffect(() => { applyTheme(theme); }, []);
+ // eslint-disable-next-line react-hooks/exhaustive-deps
+   useEffect(() => { applyTheme(theme); }, []);
 
   useEffect(() => {
     const getUser = async () => {
